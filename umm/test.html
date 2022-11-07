@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddddddddddd</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <button @click="loveCount++;">고백하기</button>
+        <p>{{boy}}가 {{girl}}에게 <b v-html="style"></b>했다가....{{loveCount}}번 차였다...</p>
+    </div>
+
+    <div id="app2">
+        <button @click="loveCount++;">고백하기</button>
+        <p>{{boy}}가 {{girl}}에게 고백했다가....{{loveCount}}번 차였다...</p>
+    </div>
+
+    <script>
+        const {createApp} = Vue;
+        createApp({
+            data(){
+            return{
+                boy: "강동호",
+                girl: "허윤빈",
+                loveCount: 0,
+                style:'<span style="color:red;">고백</span>'
+        }}
+    }).mount("#app")
+    </script>
+    <script>
+        const {createApp2} = Vue;
+        createApp({
+            data(){
+            return{
+                boy: "강동호",
+                girl: "허윤빈",
+                loveCount: 0,
+        }}
+    }).mount("#app2")
+    </script>
+
+
+</body>
+</html>
