@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>으아아아아아아아아아아아아</title>
+    <link rel="stylesheet" href="hmm.css" type="text/css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <style>
+        #app{
+            width: 550px;
+            height: 600px;
+            background-color: rgb(2, 63, 38);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding : 10px;           
+            bottom: 80;
+        }
+        .backblock{            
+            background-color: rgb(53, 246, 121);
+        }
+    </style>
+    <center>
+    <div id="app">
+        <div class="backblock" v-for="index in backblocks"></div>        
+        <div class="backblock" v-for="index in backblocks">{{index}}</div>        
+        <div class="blockPrefab">1</div>        
+    </div>
+    </center>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript">
+        const {createApp} = Vue;
+        createApp({
+            data() {
+                return {                    
+                    backblocks : 16,
+                }
+            },
+            mounted(){
+                console.log("app 마운트 성공!");
+            },
+        }).mount("#app");
+    </script>    
+
+    <script src="hmm.js"></script>
+</body>
+</html>
