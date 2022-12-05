@@ -1,0 +1,24 @@
+td{
+    border: 2px solid #b25318;
+    border-radius: 9px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    height: 70px;
+    width: 70px;
+    color: #d6851c;
+    background-color: #FBEDDC;
+}
+p{
+    color: white;
+    vertical-align: top;
+}
+body{
+    background-color: #ffffffbe;
+}
+
+#board{
+    margin-left: 70px;
+    margin-top: 5px;
+}
