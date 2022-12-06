@@ -193,7 +193,7 @@ function generate(){
 
 // 숫자 생성 확률
 function getNewNum(){
-    var rand = parseInt(Math.random()*10);
+    var rand = parseInt(Math.random()*2);
     if(rand==0) return 4;
     return 2;
 }
